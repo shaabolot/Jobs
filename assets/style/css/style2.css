@@ -1,0 +1,455 @@
+@import "../../fonts/fonts.css";
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #fff;
+}
+
+.nav__cektion {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav__cektion .logo {
+  height: 70px;
+  width: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../img/logo.png");
+}
+.nav__cektion ul {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__cektion ul li {
+  list-style: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.nav__cektion ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+.nav__cektion ul .hover:hover {
+  padding: 5px 0;
+  border-bottom: 2px solid rgb(218, 65, 5);
+}
+
+.bagraunt_red_head {
+  height: 750px;
+  background-image: url("../../img/yellowhead.png");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bagraunt_red_head .bagraunt_howo_head {
+  height: 605px;
+  background-image: url("../../img/howohead.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 40%;
+}
+.bagraunt_red_head .text_head {
+  position: absolute;
+  height: 700px;
+  top: 150px;
+  right: 450px;
+}
+.bagraunt_red_head .text_head_h1 {
+  font-family: Poppins;
+  font-size: 52px;
+  padding: 70px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.text_special {
+  text-align: center;
+}
+.text_special img {
+  height: 30px;
+  margin: 0 10px;
+}
+.text_special .red {
+  color: red;
+}
+
+.special_technics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.special_technics .special_left .img {
+  height: 20px;
+  margin: 5px 5px 0 0;
+}
+.special_technics .special_left input {
+  margin: 5px 5px 0 30px;
+}
+.special_technics .special_right {
+  margin-top: 50px;
+}
+.special_technics .special_right .special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.special_technics .special_right .special .howo_img1 {
+  width: 320px;
+}
+.special_technics .special_right .special .howo_img1 img {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 10px;
+}
+.special_technics .special_right .special .howo_img2 {
+  width: 320px;
+}
+.special_technics .special_right .special .howo_img2 img {
+  height: 300px;
+  width: 300px;
+  gap: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.special_technics .special_right .special .howo_img3 {
+  width: 320px;
+}
+.special_technics .special_right .special .howo_img3 img {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.special_technics .special_right .special .howo_cotegories {
+  height: 200px;
+  width: 300px;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 10px;
+}
+.special_technics .special_right .special .howo_cotegories h3 {
+  color: blue;
+  padding: 20px 0;
+  display: inline-block;
+}
+.special_technics .special_right .special .howo_cotegories p {
+  padding: 20px 0;
+}
+.special_technics .special_right .special .howo_cotegories button {
+  padding: 15px 30px;
+  border: none;
+  background-color: red;
+  cursor: pointer;
+  color: #fff;
+}
+.special_technics .special_right .special .howo_cotegories button:hover {
+  background-color: orange;
+}
+.special_technics .special_right .special .howo_cotegories button:active {
+  background-color: yellow;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #333;
+}
+footer .foot_content {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .foot_content .foot_img {
+  height: 70px;
+  width: 150px;
+  background-image: url("../../img/foot_logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .foot_content ul {
+  color: #fff;
+}
+footer .foot_content ul li {
+  padding: 5px 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .container {
+    width: 700px;
+  }
+
+  nav .nav__cektion {
+    height: 50px;
+  }
+  nav .nav__cektion .logo {
+    height: 40px;
+    width: 100px;
+  }
+  nav .nav__cektion ul {
+    width: 70%;
+  }
+  nav .nav__cektion ul li a {
+    font-size: 10px;
+    row-gap: 10px;
+  }
+
+  .bagraunt_red_head .bagraunt_howo_head {
+    height: 650px;
+  }
+  .bagraunt_red_head .text_head {
+    right: 220px;
+  }
+  .bagraunt_red_head .text_head_h1 {
+    font-size: 35px;
+    padding: 70px 0;
+  }
+
+  .text_special {
+    text-align: center;
+  }
+  .text_special img {
+    height: 20px;
+    margin: 0 10px;
+  }
+  .text_special .red {
+    color: red;
+  }
+
+  .special_technics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .special_technics .special_left .img {
+    height: 15px;
+    margin: 5px 5px 0 0;
+  }
+  .special_technics .special_left input {
+    margin: 5px 5px 0 0px;
+  }
+  .special_technics .special_left span {
+    font-size: 10px;
+  }
+  .special_technics .special_right {
+    margin-top: 50px;
+  }
+  .special_technics .special_right .special {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .special_technics .special_right .special .howo_img1,
+.special_technics .special_right .special .howo_img2,
+.special_technics .special_right .special .howo_img3 {
+    width: 170px;
+  }
+  .special_technics .special_right .special .howo_img1 img,
+.special_technics .special_right .special .howo_img2 img,
+.special_technics .special_right .special .howo_img3 img {
+    height: 200px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10px;
+  }
+  .special_technics .special_right .special .howo_cotegories {
+    height: 200px;
+    width: 150px;
+  }
+  .special_technics .special_right .special .howo_cotegories h3 {
+    font-size: 10px;
+  }
+  .special_technics .special_right .special .howo_cotegories span {
+    font-size: 10px;
+  }
+  .special_technics .special_right .special .howo_cotegories p {
+    font-size: 10px;
+  }
+  .special_technics .special_right .special .howo_cotegories button {
+    padding: 10px 20px;
+  }
+
+  footer .foot_content {
+    height: 200px;
+  }
+  footer .foot_content .foot_img {
+    height: 40px;
+    width: 150px;
+  }
+  footer .foot_content ul {
+    color: #fff;
+  }
+  footer .foot_content ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+
+  nav .nav__cektion {
+    height: 30px;
+  }
+  nav .nav__cektion .logo {
+    margin: 10px 0;
+    height: 10px;
+    width: 50px;
+  }
+  nav .nav__cektion ul {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav__cektion ul li a {
+    font-size: 5px;
+    row-gap: 10px;
+  }
+
+  .bagraunt_red_head .bagraunt_howo_head {
+    height: 650px;
+  }
+  .bagraunt_red_head .text_head {
+    left: 100px;
+  }
+  .bagraunt_red_head .text_head_h1 {
+    font-size: 25px;
+    padding: 40px 0;
+  }
+
+  .text_special {
+    text-align: center;
+  }
+  .text_special img {
+    height: 20px;
+    margin: 0 10px;
+  }
+  .text_special span {
+    font-size: 10px;
+  }
+
+  .special_technics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .special_technics .special_left {
+    margin: 0 10px;
+  }
+  .special_technics .special_left .img {
+    height: 10px;
+    margin: 5px 5px 0 0;
+  }
+  .special_technics .special_left input {
+    margin: 5px 5px 0 0px;
+  }
+  .special_technics .special_left span {
+    font-size: 5px;
+  }
+  .special_technics .special_right {
+    margin-top: 50px;
+  }
+  .special_technics .special_right .special {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .special_technics .special_right .special .howo_img1,
+.special_technics .special_right .special .howo_img2,
+.special_technics .special_right .special .howo_img3 {
+    width: 170px;
+  }
+  .special_technics .special_right .special .howo_img1 img,
+.special_technics .special_right .special .howo_img2 img,
+.special_technics .special_right .special .howo_img3 img {
+    height: 200px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10px;
+  }
+  .special_technics .special_right .special .howo_cotegories {
+    height: 200px;
+    width: 150px;
+  }
+  .special_technics .special_right .special .howo_cotegories h3 {
+    font-size: 12px;
+  }
+  .special_technics .special_right .special .howo_cotegories span {
+    font-size: 10px;
+  }
+  .special_technics .special_right .special .howo_cotegories p {
+    font-size: 12px;
+  }
+  .special_technics .special_right .special .howo_cotegories button {
+    padding: 10px 20px;
+  }
+
+  footer .foot_content {
+    height: 250px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .foot_content .foot_img {
+    height: 40px;
+    width: 100px;
+  }
+  footer .foot_content ul li {
+    font-size: 8px;
+  }
+}

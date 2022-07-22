@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fascinate';
+    src: url("./Fascinate,League_Gothic,Ubuntu/Fascinate/Fascinate-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'League_Gothic';
+    src: url("./Fascinate,League_Gothic,Ubuntu/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf");
+}

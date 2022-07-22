@@ -1,0 +1,507 @@
+@import "./mixin.scss";
+@import "../../fonts/fonts.css";
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// ! nav
+
+nav {
+    background-color: #fff;
+}
+
+.nav__cektion {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        height: 70px;
+        width: 150px;
+        @include imges;
+        background-image: url('../../img/logo.png');
+    }
+
+    ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            list-style: none;
+            transition: 1s;
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: black;
+            }
+        }
+
+        .hover:hover {
+            padding: 5px 0;
+            border-bottom: 2px solid rgb(218, 65, 5);
+        }
+    }
+}
+
+// ! header
+.bagraunt_red_head {
+    height: 750px;
+    background-image: url("../../img/yellowhead.png");
+    position: relative;
+    @include img;
+
+    .bagraunt_howo_head {
+        height: 605px;
+        background-image: url("../../img/howohead.png");
+        @include img;
+        margin-left: 40%;
+    }
+
+    .text_head {
+        position: absolute;
+        height: 700px;
+        top: 150px;
+        right: 450px;
+
+        &_h1 {
+            font-family: Poppins;
+            font-size: 52px;
+            padding: 70px 0;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+//! special_technics
+.text_special {
+    text-align: center;
+
+    img {
+        height: 30px;
+        margin: 0 10px;
+    }
+
+    .red {
+        color: red;
+    }
+}
+
+.special_technics {
+    display: flex;
+
+    .special_left {
+        .img {
+            height: 20px;
+            margin: 5px 5px 0 0;
+        }
+
+        input {
+            margin: 5px 5px 0 30px;
+        }
+    }
+
+    .special_right {
+        margin-top: 50px;
+
+        .special {
+            display: flex;
+            justify-content: space-between;
+
+            .howo_img1 {
+                width: 320px;
+
+                img {
+                    height: 300px;
+                    width: 300px;
+                    @include img;
+                    gap: 10px;
+                }
+            }
+
+            .howo_img2 {
+                width: 320px;
+
+                img {
+                    height: 300px;
+                    width: 300px;
+                    gap: 10px;
+                    @include img;
+                }
+            }
+
+            .howo_img3 {
+                width: 320px;
+
+                img {
+                    height: 300px;
+                    width: 300px;
+                    @include img;
+                }
+            }
+
+            .howo_cotegories {
+                height: 200px;
+                width: 300px;
+                background-color: #fff;
+                color: #333;
+                margin-bottom: 10px;
+
+                h3 {
+                    color: blue;
+                    padding: 20px 0;
+                    display: inline-block;
+                }
+
+                p {
+                    padding: 20px 0;
+                }
+
+                button {
+                    padding: 15px 30px;
+                    border: none;
+                    background-color: red;
+                    cursor: pointer;
+                    color: #fff;
+                }
+
+                button:hover {
+                    background-color: orange;
+                }
+
+                button:active {
+                    background-color: yellow;
+                }
+            }
+        }
+    }
+}
+
+// ! footer
+footer {
+    margin-top: 100px;
+    background-color: #333;
+
+    .foot_content {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .foot_img {
+            height: 70px;
+            width: 150px;
+            background-image: url('../../img/foot_logo.png');
+            @include imges;
+        }
+
+        ul {
+            color: #fff;
+
+            li {
+                padding: 5px 0;
+                list-style: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .container {
+        width: 700px;
+    }
+
+    // ! nav
+    nav {
+        .nav__cektion {
+            height: 50px;
+
+            .logo {
+                height: 40px;
+                width: 100px;
+            }
+
+            ul {
+                width: 70%;
+
+                li {
+                    a {
+                        font-size: 10px;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // ! header
+    .bagraunt_red_head {
+        .bagraunt_howo_head {
+            height: 650px;
+        }
+
+        .text_head {
+            right: 220px;
+
+            &_h1 {
+                font-size: 35px;
+                padding: 70px 0;
+            }
+        }
+    }
+
+    //! special_technics
+    .text_special {
+        text-align: center;
+
+        img {
+            height: 20px;
+            margin: 0 10px;
+        }
+
+        .red {
+            color: red;
+        }
+    }
+
+    .special_technics {
+        display: flex;
+
+        .special_left {
+            .img {
+                height: 15px;
+                margin: 5px 5px 0 0;
+            }
+
+            input {
+                margin: 5px 5px 0 0px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+
+        .special_right {
+            margin-top: 50px;
+
+            .special {
+                display: flex;
+                justify-content: space-between;
+
+                .howo_img1,
+                .howo_img2,
+                .howo_img3 {
+                    width: 170px;
+
+                    img {
+                        height: 200px;
+                        width: 150px;
+                        @include img;
+                        gap: 10px;
+                    }
+                }
+
+                .howo_cotegories {
+                    height: 200px;
+                    width: 150px;
+
+                    h3 {
+                        font-size: 10px;
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+
+                    button {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // ! footer
+    footer {
+        .foot_content {
+            height: 200px;
+
+            .foot_img {
+                height: 40px;
+                width: 150px;
+            }
+
+            ul {
+                color: #fff;
+
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 540px) {
+
+    .container {
+        width: 300px;
+    }
+
+    nav {
+        .nav__cektion {
+            height: 30px;
+
+            .logo {
+                margin: 10px 0;
+                height: 10px;
+                width: 50px;
+            }
+
+            ul {
+                width: 100%;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        font-size: 5px;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // ! header
+    .bagraunt_red_head {
+        .bagraunt_howo_head {
+            height: 650px;
+        }
+
+        .text_head {
+            left: 100px;
+
+            &_h1 {
+                font-size: 25px;
+                padding: 40px 0;
+            }
+        }
+    }
+
+    //! special_technics
+    .text_special {
+        text-align: center;
+
+        img {
+            height: 20px;
+            margin: 0 10px;
+        }
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    .special_technics {
+        display: flex;
+
+        .special_left {
+            margin: 0 10px;
+
+            .img {
+                height: 10px;
+                margin: 5px 5px 0 0;
+            }
+
+            input {
+                margin: 5px 5px 0 0px;
+            }
+
+            span {
+                font-size: 5px;
+            }
+        }
+
+        .special_right {
+            margin-top: 50px;
+
+            .special {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .howo_img1,
+                .howo_img2,
+                .howo_img3 {
+                    width: 170px;
+
+                    img {
+                        height: 200px;
+                        width: 150px;
+                        @include img;
+                        gap: 10px;
+                    }
+                }
+
+                .howo_cotegories {
+                    height: 200px;
+                    width: 150px;
+
+                    h3 {
+                        font-size: 12px;
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    button {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // ! footer
+    footer {
+        .foot_content {
+            height: 250px;
+            flex-wrap: wrap;
+
+            .foot_img {
+                height: 40px;
+                width: 100px;
+            }
+
+            ul {
+                li {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
